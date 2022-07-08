@@ -5,12 +5,23 @@ context('Deposit Panel', () => {
 
     cy.get('[data-cy=deposit-value]')
       .should('exist')
-      .should('contain', '$3,024.00')
+      .should('contain', '-$37,249.01')
 
     cy.get('[data-cy=deposit-value]').should(
       'have.css',
       'color',
-      'rgba(0, 0, 0, 0.87)'
+      'rgb(255, 0, 0)'
+    )
+
+    cy.get('[data-cy=view-balance-deposits-link]').should(
+      'have.css',
+      'display',
+      'flex'
+    )
+    cy.get('[data-cy=view-balance-deposits-link]').should(
+      'have.css',
+      'justify-content',
+      'flex-end'
     )
   })
 })
