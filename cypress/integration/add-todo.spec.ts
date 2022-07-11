@@ -1,7 +1,7 @@
 context('Add Todo', () => {
   it('can add todo', () => {
     cy.visit('http://localhost:3000/')
-    cy.percySnapshot('Initial Top Page')
+    cy.percySnapshot('Initial Top Page', { port: 5555 })
 
     cy.get('[data-cy=new-todo-input-text]')
       .type('can be typing')

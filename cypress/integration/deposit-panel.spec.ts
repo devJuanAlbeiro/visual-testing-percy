@@ -1,7 +1,7 @@
 context('Deposit Panel', () => {
   it('can check Deposit panel', () => {
     cy.visit('http://localhost:3000/')
-    cy.percySnapshot('Deposit panel')
+    cy.percySnapshot('Deposit panel', { port: 5555 })
 
     cy.get('[data-cy=deposit-value]')
       .should('exist')
