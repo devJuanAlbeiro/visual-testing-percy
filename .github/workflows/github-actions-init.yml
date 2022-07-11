@@ -15,6 +15,6 @@ jobs:
       - name: Percy Test
         uses: percy/exec-action@v0.3.1
         with:
-          command: 'percy exec detached port 5338 -- cypress run'
+          command: 'percy exec port 5338 -- cypress run'
         env:
           PERCY_TOKEN: "7f6ed05e6ce8aedfec34f7e6b3d1d9f3dff710f7aaadcc791d0a0421a03c328a"
