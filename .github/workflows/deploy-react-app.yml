@@ -33,5 +33,5 @@ jobs:
       - name: deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: "AAAAB3NzaC1yc2EAAAADAQABAAACAQDSn3+rtmW+/UHl0as2fDZq7pxr6DXH7Tu4aVePO2rFOnbYFQRRI6N3IqpIZ+TYAvrBApJKECBHx3wD/BaI5LG8LZLvZl9dRUDqe+mgNY5d8B8t79cSHjFM88D5Xs+WC7bkscvGFbGqBP2spgdbJ2ZwbpNf3DQNYo/B48sQbfxF0PuN6rkFIbeeE6aWMUajcSdmdRGJD/SWZ9Ucp7RKwKUtegbROLoTA9tmLFOOrXURnfAuOebSNyZvXxhwL2vgo/r+YMaS4q6WpK5OWFmmERGS852rJIC/qhz+z9EvL3Yioko72xGkSrvEh8ccY7fzJcE3ja6ibmf4//zfaYqdKQQYmf77eTigmDKJRkIFIkZqKQs0Z88v5nAk1breBo19YJZ/P5dciFSiisoyh8QArk1r0A+LIbqjdwi9jAKdGHOLzGCrwyC4SRVgpCQNs/nVtvuQMYd5hoK2vjrK9iCJTiZm+BZjyVxfPNmq/TeuD27VVhqmCmljFhSWOlq0wTFiHYkQmbNsA7cFE3dNEy0uXzdxmNOpruXPpdGcTqTL0x6nBQG0JmGeS3M7Q/gjVBh4zj+M7E1hKOGh6IAkhbRQkX9AGvl1MfB4s/F9t3GE1Sqz7o0qaDnZXN9v7WmSwNBlC7GFH4bOdtdMETDgLIBIKLiMFYy2BuOkHcgiuU9i4ceYUQ=="
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build
