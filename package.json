@@ -22,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/laststance/react-typescript-todomvc-2022/issues"
   },
-  "homepage": "https://github.com/laststance/react-typescript-todomvc-2022",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
