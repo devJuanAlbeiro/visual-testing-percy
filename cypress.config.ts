@@ -5,5 +5,6 @@ export default defineConfig({
     baseUrl: 'https://localhost:3000',
     specPattern: 'cypress/integration/**/*.spec.ts',
     supportFile: 'cypress/support/index.ts',
+    video: false,
   },
 })
