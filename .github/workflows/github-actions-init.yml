@@ -1,20 +1,20 @@
-name: GitHub Actions Demo
-on: [pull_request]
+name: CI
+on: [push, pull_request]
 jobs:
- cypress-run:
+  build:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install node
-        uses: actions/setup-node@v2
-        with:
-            node:version: '14'
-      - name: Install dependencies
-        run: npm install
+        uses: actions/checkout@main
+      - name: Install
+        run: npm i
+      - name: Cypress Install
+        run: npm i cypress @percy/cypress @percy/cli
+      - name: Building App
+        run: npm run build
       - name: Percy Test
         uses: percy/exec-action@v0.3.1
         with:
-          command: 'cypress run'
+          command: npx @percy/cli snapshot build/
         env:
-          PERCY_TOKEN: "7f6ed05e6ce8aedfec34f7e6b3d1d9f3dff710f7aaadcc791d0a0421a03c328a"
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
