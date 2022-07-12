@@ -30,7 +30,7 @@ export default function Deposits() {
         data-testid="view-balance-deposits-link"
         sx={{
           display: "flex",
-          justifyContent: "flex-end",
+          justifyContent: "center",
         }}
       >
         <Link color="primary" href="#" onClick={preventDefault}>
