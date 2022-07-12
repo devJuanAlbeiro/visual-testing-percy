@@ -23,7 +23,7 @@ export default function Deposits() {
         -$37,249.01
       </Typography>
       <Typography color="text.secondary" sx={{ flex: 1 }}>
-        on 15 March, 2019
+        on 15 March, 2019 Juan
       </Typography>
       <Box
         data-cy="view-balance-deposits-link"
